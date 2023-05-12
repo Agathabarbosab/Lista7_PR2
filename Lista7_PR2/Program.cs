@@ -36,7 +36,7 @@ namespace Lista7_PR2
 
 
                         float valorproduto = 1, quantidadeitens = 1, valortotal = 0, totaldprodutos = 0;
-
+                        int d = 1;
                         while (true)
                         {
                             quantidadeitens++;
@@ -52,10 +52,16 @@ namespace Lista7_PR2
 
                             totaldprodutos += quantidadeitens;
                             valortotal += quantidadeitens * valorproduto;
+                            Console.WriteLine("O valor total da sua compra é de:" + valortotal);
+                            Console.WriteLine("A Quantidade de itens total da sua compra é de:" + totaldprodutos);
+
                         }
-                        Console.WriteLine("O valor total da sua compra é de:" + valortotal);
-                        Console.WriteLine("A Quantidade de itens total da sua compra é de:" + totaldprodutos);
+
+
+
+
                     }
+                    
 
                     break;
                 case 2:
@@ -373,7 +379,7 @@ namespace Lista7_PR2
 
                         Console.WriteLine("Divisores de " + numero + ":");
 
-                        int fn = 1;
+                        int fn = 0;
                         while (fn <= numero)
                         {
                             fn++;
